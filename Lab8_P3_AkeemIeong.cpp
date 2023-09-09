@@ -70,23 +70,24 @@ vector<Vehiculo*> caso1() {
     return vehiculos;
 }
 
-//void caso3() {
-//    string info;
-//    ifstream archivo;
-//    archivo.open("viajes.txt", ios::in);
-//
-//    if (archivo.fail()) {
-//        cout << "No se puedo abrir el archivo";
-//        exit(1);
-//    }
-//
-//    while (!archivo.eof()) {
-//        getline(archivo, info);
-//        cout << info << endl;
-//    } 
-//
-//    archivo.close();
-//}
+string caso3() {
+    string info,otra;
+    ifstream archivo;
+    archivo.open("viajes.txt", ios::in);
+    if (archivo.fail()) {
+        cout << "No se puedo abrir el archivo";
+        exit(1);
+    }
+
+    while (!archivo.eof()) {
+        getline(archivo, info);
+        //cout << info << endl;
+        otra += info;
+    } 
+
+    archivo.close();
+    return otra;
+}
 
 int main(){
     int op;
@@ -107,16 +108,24 @@ int main(){
                 vehiculos = caso1();
                 break;
             case 2:
-                for (auto v: vehiculos) {
+                for (auto &v: vehiculos) {
                     cout << v << endl;
                 }
                 break;
             case 3: 
-                admin.leerViajes();
+                admin.leerViajes(caso3());
                 break;
             case 4:
                 break;
             case 5:
+                ofstream archivo;
+                archivo.open("resultados.txt", ios::app);
+                if (archivo.fail()) {
+                    cout << "No se puedo abrir el archivo";
+                    exit(1);
+                }
+                archivo << admin << endl;
+                archivo.close();
                 break;
         }
     } while (op!=6);

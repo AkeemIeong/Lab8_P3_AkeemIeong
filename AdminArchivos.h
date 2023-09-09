@@ -9,7 +9,7 @@ private:
 	string archivoResultados;
 	vector <Viaje*> viajes;
 public:
-	void leerViajes();
+	void leerViajes(string);
 	void guardarResultados();
 	AdminArchivos();
 	AdminArchivos(string, string, vector<Viaje*>);

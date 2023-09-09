@@ -1,4 +1,9 @@
 #include "Viaje.h"
+Viaje::Viaje(string ciudad, float distancia, float carga) {
+	this->ciudad = ciudad;
+	this->distancia = distancia;
+	this->carga = carga;
+}
 Viaje::Viaje(string ciudad, float distancia, float carga, Vehiculo vehiculo, float tiempoEstimado, float costoEstimado) {
 	this->ciudad = ciudad;
 	this->distancia = distancia;

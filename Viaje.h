@@ -12,6 +12,7 @@ private:
 	float costoEstimado;
 public:
 	~Viaje();
+	Viaje(string, float, float);
 	Viaje(string, float, float, Vehiculo, float, float);
 	void asignarVeiculo();
 	void calcularTiempoCosto();
