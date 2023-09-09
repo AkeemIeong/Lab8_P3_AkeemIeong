@@ -1,10 +1,2 @@
-﻿  AdminArchivos.cpp
-  Camion.cpp
-  Furgon.cpp
-  Motocicleta.cpp
-  Vehiculo.cpp
-  Viaje.cpp
-  Generating Code...
-Camion.obj : error LNK2019: unresolved external symbol "public: __cdecl Vehiculo::~Vehiculo(void)" (??1Vehiculo@@QEAA@XZ) referenced in function "int `public: __cdecl Camion::Camion(float,float,float,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)'::`1'::dtor$1" (?dtor$1@?0???0Camion@@QEAA@MMMV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA)
-Viaje.obj : error LNK2001: unresolved external symbol "public: __cdecl Vehiculo::~Vehiculo(void)" (??1Vehiculo@@QEAA@XZ)
-C:\Users\SURFACEB2I7\Desktop\Progra 3\Lab8_P3_AkeemIeong\x64\Debug\Lab8_P3_AkeemIeong.exe : fatal error LNK1120: 1 unresolved externals
+﻿  Lab8_P3_AkeemIeong.cpp
+  Lab8_P3_AkeemIeong.vcxproj -> C:\Users\SURFACEB2I7\Desktop\Progra 3\Lab8_P3_AkeemIeong\x64\Debug\Lab8_P3_AkeemIeong.exe

@@ -8,10 +8,10 @@ Viaje::Viaje(string ciudad, float distancia, float carga, Vehiculo vehiculo, flo
 	this->costoEstimado = costoEstimado;
 }
 
-void asignarVeiculo() {
+void Viaje::asignarVeiculo() {
 
 }
 
-void calcularTiempoCosto() {
+void Viaje::calcularTiempoCosto() {
 
 }

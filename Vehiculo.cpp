@@ -1,5 +1,10 @@
 #include "Vehiculo.h"
 Vehiculo::Vehiculo() {
+
+}
+
+Vehiculo::~Vehiculo() {
+
 }
 
 Vehiculo::Vehiculo(float capacidad, float velocidad, float consumo) {

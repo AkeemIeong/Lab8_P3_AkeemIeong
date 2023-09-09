@@ -10,7 +10,8 @@ private:
 	vector <Viaje*> viajes;
 public:
 	void leerViajes();
-	void guardarResultdos();
+	void guardarResultados();
+	AdminArchivos();
 	AdminArchivos(string, string, vector<Viaje*>);
 	~AdminArchivos();
 };

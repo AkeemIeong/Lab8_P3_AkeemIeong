@@ -1,9 +1,9 @@
 #pragma once
 class Vehiculo{
 private:
-	float capacidad;
-	float velocidad;
-	float consumo;
+	float capacidad=0;
+	float velocidad=0;
+	float consumo=0;
 public:
 	Vehiculo();
 	Vehiculo(float, float, float);
